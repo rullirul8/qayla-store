@@ -121,7 +121,7 @@
                       alt="" 
                       class="mr-3 rounded-circle"/>
                     <div class="media-body">
-                      <h5 class="mt-2 mb-1">Veve</h5>
+                      <h5 class="mt-2 mb-1">Rani</h5>
                       I thought it was not good for living room. 
                       I really happy to decided buy this product 
                       last week now feels like homey.
@@ -134,7 +134,7 @@
                       alt="" 
                       class="mr-3 rounded-circle"/>
                     <div class="media-body">
-                      <h5 class="mt-2 mb-1">Nana</h5>
+                      <h5 class="mt-2 mb-1">Ashley</h5>
                       Color is great with the minimalist concept. 
                       Even I thought it was made by Cactus industry. 
                       I do really satisfied with this.
@@ -147,7 +147,7 @@
                       alt="" 
                       class="mr-3 rounded-circle"/>
                     <div class="media-body">
-                      <h5 class="mt-2 mb-1">Rara</h5>
+                      <h5 class="mt-2 mb-1">Nindy</h5>
                       When I saw at first, it was really awesome to have with.
                       Just let me know if there is another upcoming 
                       product like this.
