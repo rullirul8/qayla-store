@@ -144,8 +144,8 @@
         },
         data() {
           return {
-          name: "Andini Ria",
-          email: "andini@gmail.com",
+          name: "",
+          email: "",
           email_unavailable: false,
           }
         },

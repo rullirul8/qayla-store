@@ -88,7 +88,7 @@ class CheckoutController extends Controller
 
     public function callback(Request $request)
     {
-        Config::$serverKey = config('services.midtrans.serverKey');
+        Config::$serverKey = 'SB-Mid-server-eJAWEMI-HTD2EOhrW0SJTCD_';
         Config::$isProduction = config('services.midtrans.isProduction');
         Config::$isSanitized = config('services.midtrans.isSanitized');
         Config::$is3ds = config('services.midtrans.is3ds');
@@ -130,5 +130,47 @@ class CheckoutController extends Controller
         }
 
         $transaction->save();
+
+        // Kirimkan email
+        if ($transaction)
+        {
+            if($status == 'capture' && $fraud == 'accept' )
+            {
+                //
+            }
+            else if ($status == 'settlement')
+            {
+                //
+            }
+            else if ($status == 'success')
+            {
+                //
+            }
+            else if($status == 'capture' && $fraud == 'challenge' )
+            {
+                return response()->json([
+                    'meta' => [
+                        'code' => 200,
+                        'message' => 'Midtrans Payment Challenge'
+                    ]
+                ]);
+            }
+            else
+            {
+                return response()->json([
+                    'meta' => [
+                        'code' => 200,
+                        'message' => 'Midtrans Payment not Settlement'
+                    ]
+                ]);
+            }
+
+            return response()->json([
+                'meta' => [
+                    'code' => 200,
+                    'message' => 'Midtrans Notification Success'
+                ]
+            ]);
+        }
     }
 }

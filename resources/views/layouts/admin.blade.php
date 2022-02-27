@@ -15,7 +15,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="/style/main.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.25/datatables.min.css"/>
-
     @stack('addon-style')
   </head>
 
@@ -54,7 +53,7 @@
             </a>
             <a
               href="{{ route('dashboard-transaction') }}"
-              class="list-group-item list-group-item-action  {{ (request()->is('admin/user*')) ? 'active' : '' }}"
+              class="list-group-item list-group-item-action  {{ (request()->is('admin/transaction*')) ? 'active' : '' }}"
             >
               Transactions
             </a>
